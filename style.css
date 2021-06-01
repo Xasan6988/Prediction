@@ -1,0 +1,34 @@
+body {
+  display: flex;
+}
+h2 {
+  padding: 10px;
+}
+.main-region {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  border: 1px solid black;
+}
+.output {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+}
+.number {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 10px auto;
+  text-align: center;
+
+}
+.stop {
+  margin: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+}

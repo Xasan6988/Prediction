@@ -17,12 +17,12 @@ const predictions = {
   10: 'Сяоми топ за свои деньги',
 };
 const random = (min, max) => {
-  return Math.round(Math.random() * (max - min + 1) + min, 2)
-}
+  return Math.round(Math.random() * (max - min + 1) + min, 2);
+};
 const start = () => {
   outputDiv.textContent = '';
   timer = setInterval(() => {
-    numberDiv.textContent = random(1, 10)
+    numberDiv.textContent = random(1, 10);
   }, 100);
 };
 
@@ -33,4 +33,4 @@ const doPredict = () => {
 
 
 startBtn.addEventListener('click', start);
-stopBtn.addEventListener('click', doPredict)
+stopBtn.addEventListener('click', doPredict);

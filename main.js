@@ -17,18 +17,20 @@ const predictions = {
   10: 'Здесь ничего нет)',
 };
 const random = (min, max) => {
-  return Math.round(Math.random() * (max - min + 1) + min, 2);
+  return Math.round(Math.random() * (max - min) + min, 2);
 };
 const start = () => {
   outputDiv.textContent = '';
   timer = setInterval(() => {
     numberDiv.textContent = random(1, 10);
   }, 100);
+  startBtn.removeEventListener('click', start);
 };
 
 const doPredict = () => {
   clearInterval(timer);
   outputDiv.textContent = predictions[numberDiv.textContent];
+  startBtn.addEventListener('click', start);
 };
 
 
